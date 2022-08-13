@@ -16,6 +16,9 @@ app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
 
+// setting file path for static resources -- CSS JS ETC...
+app.use(express.static('public/zookeepr-public'));
+
 // filter results function
 function filterByQuery(query, animalsArray) {
     let personalityTraitsArray = [];
@@ -127,6 +130,24 @@ app.post('/api/animals', (req, res) => {
     const animal = createNewAnimal(req.body, animals);
     res.json(animal);
   }
+  });
+
+// sending the index.html file on request
+app.get('/', (req, res) => {
+res.sendFile(path.join(__dirname, './public/zookeepr-public/index.html'));
+});  
+// sending the animals.html file on request
+app.get('/animals', (req, res) => {
+res.sendFile(path.join(__dirname, './public/zookeepr-public/animals.html'));
+});  
+// sending the zookeepers.html file on request
+app.get('/zookeepers', (req, res) => {
+res.sendFile(path.join(__dirname, './public/zookeepr-public/zookeepers.html'));
+});  
+
+// wildcard route -- catch all
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepr-public/index.html'));
   });
 
   // method to make server listen

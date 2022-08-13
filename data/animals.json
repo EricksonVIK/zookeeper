@@ -120,6 +120,27 @@
         "intelligent"
       ],
       "id": "11"
+    },
+    {
+      "name": "Sadie",
+      "species": "Dog",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "anxious",
+        "loving"
+      ],
+      "id": "12"
+    },
+    {
+      "name": "Sniper",
+      "species": "Dog",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry",
+        "loving",
+        "goofy"
+      ],
+      "id": "13"
     }
   ]
 }
