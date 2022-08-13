@@ -101,46 +101,37 @@
       ]
     },
     {
-      "name": "Larry",
-      "species": "lemur",
-      "diet": "omnivore",
-      "personalityTraits": [
-        "hungry",
-        "playful"
-      ],
-      "id": "10"
-    },
-    {
-      "name": "Mace",
-      "species": "dog",
-      "diet": "kibble",
-      "personalityTraits": [
-        "hungry",
-        "playful",
-        "intelligent"
-      ],
-      "id": "11"
-    },
-    {
-      "name": "Sadie",
-      "species": "Dog",
-      "diet": "carnivore",
-      "personalityTraits": [
-        "anxious",
-        "loving"
-      ],
-      "id": "12"
-    },
-    {
       "name": "Sniper",
       "species": "Dog",
-      "diet": "carnivore",
+      "diet": "omnivore",
       "personalityTraits": [
         "hungry",
         "loving",
         "goofy"
       ],
-      "id": "13"
+      "id": "10"
+    },
+    {
+      "name": "Sadie",
+      "species": "Dog",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "anxious",
+        "loving"
+      ],
+      "id": "11"
+    },
+    {
+      "name": "Mace",
+      "species": "Dog",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "loving",
+        "goofy"
+      ],
+      "id": "12"
     }
   ]
 }
